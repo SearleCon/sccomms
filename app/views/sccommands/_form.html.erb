@@ -1,0 +1,25 @@
+<%= form_for(@sccommand) do |f| %>
+  <% if @sccommand.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sccommand.errors.count, "error") %> prohibited this sccommand from being saved:</h2>
+
+      <ul>
+      <% @sccommand.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :commandstr %><br />
+    <%= f.text_field :commandstr %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

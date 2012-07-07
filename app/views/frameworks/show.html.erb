@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @framework.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @framework.description %>
+</p>
+
+<p>
+  <b>Version:</b>
+  <%= @framework.version %>
+</p>
+
+
+<%= link_to 'Edit', edit_framework_path(@framework) %> |
+<%= link_to 'Back', frameworks_path %>

@@ -1,0 +1,25 @@
+<h1>Listing sccommands</h1>
+
+<table>
+  <tr>
+    <th>Commandstr</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sccommands.each do |sccommand| %>
+  <tr>
+    <td><%= sccommand.commandstr %></td>
+    <td><%= sccommand.description %></td>
+    <td><%= link_to 'Show', sccommand %></td>
+    <td><%= link_to 'Edit', edit_sccommand_path(sccommand) %></td>
+    <td><%= link_to 'Destroy', sccommand, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Sccommand', new_sccommand_path %>

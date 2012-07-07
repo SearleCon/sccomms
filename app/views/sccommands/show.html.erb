@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Commandstr:</b>
+  <%= @sccommand.commandstr %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @sccommand.description %>
+</p>
+
+
+<%= link_to 'Edit', edit_sccommand_path(@sccommand) %> |
+<%= link_to 'Back', sccommands_path %>
