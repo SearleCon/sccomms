@@ -2,7 +2,7 @@ class Sccommand < ActiveRecord::Base
   
   def self.search(search)
     if search
-      where('commandstr or description LIKE ?', "%#{search}%")
+      where('commandstr LIKE ?', "%#{search}%")
     else
       scoped
     end
