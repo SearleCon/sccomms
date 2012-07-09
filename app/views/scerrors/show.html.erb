@@ -1,22 +1,22 @@
-<%- model_class = @sccommand.class -%>
+<%- model_class = @scerror.class -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human %></h1>
 </div>
 
 <dl class="dl-horizontal">
-  <dt><strong><%= model_class.human_attribute_name(:commandstr) %>:</strong></dt>
-  <dd><%= @sccommand.commandstr %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:description) %>:</strong></dt>
-  <dd><%= @sccommand.description %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:actualerror) %>:</strong></dt>
+  <dd><%= @scerror.actualerror %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:fixnote) %>:</strong></dt>
+  <dd><%= @scerror.fixnote %></dd>
 </dl>
 
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
-              sccommands_path, :class => 'btn'  %>
+              scerrors_path, :class => 'btn'  %>
   <%= link_to t('.edit', :default => t("helpers.links.edit")),
-              edit_sccommand_path(@sccommand), :class => 'btn' %>
+              edit_scerror_path(@scerror), :class => 'btn' %>
   <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-              sccommand_path(@sccommand),
+              scerror_path(@scerror),
               :method => 'delete',
               :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
               :class => 'btn btn-danger' %>

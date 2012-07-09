@@ -1,21 +1,14 @@
-<%= form_for(@note) do |f| %>
-  <% if @note.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@note.errors.count, "error") %> prohibited this note from being saved:</h2>
-
-      <ul>
-      <% @note.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<%= form_for @note, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :description, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_area :description, :class => 'text_area' %>
     </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                notes_path, :class => 'btn' %>
   </div>
 <% end %>

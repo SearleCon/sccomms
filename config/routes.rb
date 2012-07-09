@@ -1,4 +1,6 @@
 SampleApp::Application.routes.draw do
+  resources :scerrors
+
   resources :frameworks
 
   resources :notes

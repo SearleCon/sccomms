@@ -3157,3 +3157,250 @@ Served asset /notes.js - 304 Not Modified (0ms)
 
 Started GET "/assets/sccommands.css?body=1" for 127.0.0.1 at 2012-07-09 13:55:52 +0200
 Served asset /sccommands.css - 304 Not Modified (0ms)
+
+
+Started GET "/sccommands" for 127.0.0.1 at 2012-07-09 14:14:37 +0200
+Processing by SccommandsController#index as HTML
+  [1m[36mSccommand Load (0.6ms)[0m  [1mSELECT "sccommands".* FROM "sccommands" [0m
+  Rendered sccommands/index.html.erb within layouts/application (235.1ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'n0L_bha6mWjEu7_bVvzDig' LIMIT 1
+  Rendered layouts/_header.html.erb (70.9ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 573ms (Views: 563.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/frameworks.js?body=1" for 127.0.0.1 at 2012-07-09 14:14:39 +0200
+Served asset /frameworks.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/sccommands.css?body=1" for 127.0.0.1 at 2012-07-09 14:14:39 +0200
+Served asset /sccommands.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-07-09 14:14:39 +0200
+Served asset /custom.css - 304 Not Modified (10ms)
+
+
+Started GET "/assets/notes.css?body=1" for 127.0.0.1 at 2012-07-09 14:14:39 +0200
+Served asset /notes.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/frameworks.css?body=1" for 127.0.0.1 at 2012-07-09 14:14:39 +0200
+Served asset /frameworks.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-09 14:14:39 +0200
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/notes.js?body=1" for 127.0.0.1 at 2012-07-09 14:14:39 +0200
+Served asset /notes.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/sccommands.js?body=1" for 127.0.0.1 at 2012-07-09 14:14:39 +0200
+Served asset /sccommands.js - 304 Not Modified (2ms)
+
+
+Started GET "/frameworks" for 127.0.0.1 at 2012-07-09 14:14:44 +0200
+Processing by FrameworksController#index as HTML
+  [1m[36mFramework Load (0.5ms)[0m  [1mSELECT "frameworks".* FROM "frameworks" [0m
+  Rendered frameworks/index.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'n0L_bha6mWjEu7_bVvzDig' LIMIT 1
+  Rendered layouts/_header.html.erb (3.9ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 136ms (Views: 36.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/sccommands.css?body=1" for 127.0.0.1 at 2012-07-09 14:14:45 +0200
+Served asset /sccommands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notes.css?body=1" for 127.0.0.1 at 2012-07-09 14:14:45 +0200
+Served asset /notes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-09 14:14:45 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-07-09 14:14:45 +0200
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/frameworks.css?body=1" for 127.0.0.1 at 2012-07-09 14:14:45 +0200
+Served asset /frameworks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frameworks.js?body=1" for 127.0.0.1 at 2012-07-09 14:14:45 +0200
+Served asset /frameworks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notes.js?body=1" for 127.0.0.1 at 2012-07-09 14:14:45 +0200
+Served asset /notes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sccommands.js?body=1" for 127.0.0.1 at 2012-07-09 14:14:45 +0200
+Served asset /sccommands.js - 304 Not Modified (0ms)
+
+
+Started GET "/notes" for 127.0.0.1 at 2012-07-09 14:15:42 +0200
+Processing by NotesController#index as HTML
+  [1m[36mNote Load (2.3ms)[0m  [1mSELECT "notes".* FROM "notes" [0m
+  Rendered notes/index.html.erb within layouts/application (239.8ms)
+  Rendered layouts/_shim.html.erb (0.4ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'n0L_bha6mWjEu7_bVvzDig' LIMIT 1
+  Rendered layouts/_header.html.erb (106.6ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 586ms (Views: 574.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:44 +0200
+Served asset /custom.css - 304 Not Modified (23ms)
+
+
+Started GET "/assets/frameworks.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:44 +0200
+Served asset /frameworks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:44 +0200
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/notes.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:44 +0200
+Served asset /notes.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/sccommands.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:44 +0200
+Served asset /sccommands.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/frameworks.js?body=1" for 127.0.0.1 at 2012-07-09 14:15:44 +0200
+Served asset /frameworks.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/sccommands.js?body=1" for 127.0.0.1 at 2012-07-09 14:15:45 +0200
+Served asset /sccommands.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/notes.js?body=1" for 127.0.0.1 at 2012-07-09 14:15:45 +0200
+Served asset /notes.js - 304 Not Modified (2ms)
+
+
+Started GET "/frameworks" for 127.0.0.1 at 2012-07-09 14:15:50 +0200
+Processing by FrameworksController#index as HTML
+  [1m[36mFramework Load (0.2ms)[0m  [1mSELECT "frameworks".* FROM "frameworks" [0m
+  Rendered frameworks/index.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'n0L_bha6mWjEu7_bVvzDig' LIMIT 1
+  Rendered layouts/_header.html.erb (4.4ms)
+  Rendered layouts/_footer.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 47.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:50 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frameworks.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:50 +0200
+Served asset /frameworks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notes.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:50 +0200
+Served asset /notes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sccommands.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:50 +0200
+Served asset /sccommands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:50 +0200
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/frameworks.js?body=1" for 127.0.0.1 at 2012-07-09 14:15:50 +0200
+Served asset /frameworks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notes.js?body=1" for 127.0.0.1 at 2012-07-09 14:15:50 +0200
+Served asset /notes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sccommands.js?body=1" for 127.0.0.1 at 2012-07-09 14:15:50 +0200
+Served asset /sccommands.js - 304 Not Modified (0ms)
+
+
+Started GET "/sccommands" for 127.0.0.1 at 2012-07-09 14:15:52 +0200
+Processing by SccommandsController#index as HTML
+  [1m[36mSccommand Load (0.2ms)[0m  [1mSELECT "sccommands".* FROM "sccommands" [0m
+  Rendered sccommands/index.html.erb within layouts/application (23.1ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."remember_token" = 'n0L_bha6mWjEu7_bVvzDig' LIMIT 1
+  Rendered layouts/_header.html.erb (6.7ms)
+  Rendered layouts/_footer.html.erb (0.5ms)
+Completed 200 OK in 67ms (Views: 58.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:52 +0200
+Served asset /custom.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:52 +0200
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frameworks.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:52 +0200
+Served asset /frameworks.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notes.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:52 +0200
+Served asset /notes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sccommands.css?body=1" for 127.0.0.1 at 2012-07-09 14:15:52 +0200
+Served asset /sccommands.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/frameworks.js?body=1" for 127.0.0.1 at 2012-07-09 14:15:52 +0200
+Served asset /frameworks.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/notes.js?body=1" for 127.0.0.1 at 2012-07-09 14:15:52 +0200
+Served asset /notes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/sccommands.js?body=1" for 127.0.0.1 at 2012-07-09 14:15:52 +0200
+Served asset /sccommands.js - 304 Not Modified (0ms)
+  [1m[36m (2.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120312191457)
+Migrating to AddIndexToUsersEmail (20120312225604)
+Migrating to AddPasswordDigestToUsers (20120313003545)
+Migrating to AddRememberTokenToUsers (20120315044928)
+Migrating to AddAdminToUsers (20120317061724)
+Migrating to CreateMicroposts (20120318041518)
+Migrating to CreateRelationships (20120318170758)
+Migrating to CreateSccommands (20120707105536)
+Migrating to CreateNotes (20120707105820)
+Migrating to CreateFrameworks (20120707105936)
+Migrating to CreateScerrors (20120709121957)
+  [1m[35m (0.5ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  CREATE TABLE "scerrors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "actualerror" text, "fixnote" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20120709121957')[0m
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36m (0.5ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("frameworks")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("microposts")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_microposts_on_user_id_and_created_at')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("notes")
+  [1m[36m (0.1ms)[0m  [1mPRAGMA index_list("relationships")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_relationships_on_follower_id_and_followed_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_relationships_on_followed_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_relationships_on_follower_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("sccommands")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("scerrors")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_users_on_remember_token')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_users_on_email')[0m

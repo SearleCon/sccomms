@@ -1,25 +1,20 @@
-<%= form_for(@sccommand) do |f| %>
-  <% if @sccommand.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@sccommand.errors.count, "error") %> prohibited this sccommand from being saved:</h2>
-
-      <ul>
-      <% @sccommand.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+<%= form_for @sccommand, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :commandstr, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :commandstr, :class => 'text_field' %>
     </div>
-  <% end %>
+  </div>
+  <div class="control-group">
+    <%= f.label :description, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :description, :class => 'text_field' %>
+    </div>
+  </div>
 
-  <div class="field">
-    <%= f.label :commandstr %><br />
-    <%= f.text_field :commandstr %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                sccommands_path, :class => 'btn' %>
   </div>
 <% end %>

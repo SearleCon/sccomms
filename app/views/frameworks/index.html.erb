@@ -1,27 +1,40 @@
-<h1>Listing frameworks</h1>
-
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Version</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @frameworks.each do |framework| %>
-  <tr>
-    <td><%= framework.name %></td>
-    <td><%= framework.description %></td>
-    <td><%= framework.version %></td>
-    <td><%= link_to 'Show', framework %></td>
-    <td><%= link_to 'Edit', edit_framework_path(framework) %></td>
-    <td><%= link_to 'Destroy', framework, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
-<% end %>
+<%- model_class = Framework.new.class -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
+</div>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:name) %></th>
+      <th><%= model_class.human_attribute_name(:description) %></th>
+      <th><%= model_class.human_attribute_name(:version) %></th>
+      <th><%= model_class.human_attribute_name(:created_at) %></th>
+      <th><%=t '.actions', :default => t("helpers.actions") %></th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @frameworks.each do |framework| %>
+      <tr>
+        <td><%= link_to framework.id, framework_path(framework) %></td>
+        <td><%= framework.name %></td>
+        <td><%= framework.description %></td>
+        <td><%= framework.version %></td>
+        <td><%=l framework.created_at %></td>
+        <td>
+          <%= link_to t('.edit', :default => t("helpers.links.edit")),
+                      edit_framework_path(framework), :class => 'btn btn-mini' %>
+          <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+                      framework_path(framework),
+                      :method => :delete,
+                      :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')),
+                      :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
 </table>
 
-<br />
-
-<%= link_to 'New Framework', new_framework_path %>
+<%= link_to t('.new', :default => t("helpers.links.new")),
+            new_framework_path,
+            :class => 'btn btn-primary' %>

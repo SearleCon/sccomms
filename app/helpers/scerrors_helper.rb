@@ -1,0 +1,2 @@
+module ScerrorsHelper
+end
