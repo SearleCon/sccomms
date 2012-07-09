@@ -1,8 +1,14 @@
 class SccommandsController < ApplicationController
+  before_filter :signed_in_user, 
+                only: [:index, :edit, :update] 
+
+  
   # GET /sccommands
   # GET /sccommands.json
   def index
-    @sccommands = Sccommand.all
+  
+    @sccommands = Sccommand.search(params[:search]).paginate(:per_page => 5, :page => params[:page])      
+    #@sccommands = Sccommand.all
 
     respond_to do |format|
       format.html # index.html.erb

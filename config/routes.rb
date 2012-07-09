@@ -21,6 +21,7 @@ SampleApp::Application.routes.draw do
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
 
+  #root to: 'sccommands#index'
   root to: 'static_pages#home'
   # match '/', to: 'static_pages#home'
 

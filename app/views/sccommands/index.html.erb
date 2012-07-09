@@ -1,3 +1,16 @@
+
+<!-- This is for the search! -->
+			<%= form_tag sccommands_path, :method => 'get', :id => "commands_search" do %>
+			  <p>
+			    <%= text_field_tag :search, params[:search] %>
+			    <%= submit_tag "Search", :name => nil %>
+			  </p>
+			  <div id="sccommands"><%= render 'sccommands' %></div>
+			<% end %>
+<!-- This is for the search! -->
+
+
+
 <%- model_class = Sccommand.new.class -%>
 <div class="page-header">
   <h1><%=t '.title', :default => model_class.model_name.human.pluralize %></h1>
@@ -36,3 +49,5 @@
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_sccommand_path,
             :class => 'btn btn-primary' %>
+
+
