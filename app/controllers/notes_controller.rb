@@ -2,7 +2,9 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.json
   def index
-    @notes = Note.all
+    # @notes = Note.all
+    @notes = Note.paginate(:per_page => 5, :page => params[:page])      
+
 
     respond_to do |format|
       format.html # index.html.erb

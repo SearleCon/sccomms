@@ -2,7 +2,9 @@ class ScerrorsController < ApplicationController
   # GET /scerrors
   # GET /scerrors.json
   def index
-    @scerrors = Scerror.all
+    # @scerrors = Scerror.all
+    @scerrors = Scerror.paginate(:per_page => 5, :page => params[:page])      
+    
 
     respond_to do |format|
       format.html # index.html.erb

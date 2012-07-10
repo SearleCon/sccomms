@@ -35,6 +35,8 @@
   </tbody>
 </table>
 
+<% will_paginate @frameworks %>
+
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_framework_path,
             :class => 'btn btn-primary' %>

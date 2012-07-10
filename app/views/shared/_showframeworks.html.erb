@@ -1,0 +1,24 @@
+<ul class="nav nav-list">
+  <li>
+	<li class="active">
+    <a href="frameworks">
+      <i class="icon-list-alt"></i>
+      Recent Frameworks
+    </a>
+	</li>
+  </li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+    </tr>
+  </thead>
+  <tbody>
+    <% @frameworks.each do |framework| %>
+      <tr>
+        <td><%= link_to framework.name, framework_path(framework) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

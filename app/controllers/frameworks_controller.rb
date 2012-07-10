@@ -2,7 +2,9 @@ class FrameworksController < ApplicationController
   # GET /frameworks
   # GET /frameworks.json
   def index
-    @frameworks = Framework.all
+    # @frameworks = Framework.all
+    @frameworks = Framework.paginate(:per_page => 5, :page => params[:page])      
+
 
     respond_to do |format|
       format.html # index.html.erb
