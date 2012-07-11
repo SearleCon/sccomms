@@ -1,0 +1,24 @@
+<ul class="nav nav-list">
+  <li>
+	<li class="active">
+    <a href="scerrors">
+      <i class="icon-remove-sign"></i>
+      Recent Errors
+    </a>
+	</li>
+  </li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+    </tr>
+  </thead>
+  <tbody>
+    <% @scerrors.each do |scerror| %>
+      <tr>
+        <td><%= link_to scerror.actualerror, scerror_path(scerror) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

@@ -2,7 +2,9 @@ class ScerrorsController < ApplicationController
   # GET /scerrors
   # GET /scerrors.json
   def index
-    @scerrors = Scerror.all
+    # @scerrors = Scerror.all
+    @scerrors = Scerror.paginate(:per_page => 5, :page => params[:page])      
+    
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,6 +43,7 @@ class ScerrorsController < ApplicationController
   # POST /scerrors.json
   def create
     @scerror = Scerror.new(params[:scerror])
+    @scerror.user_id = current_user.id
 
     respond_to do |format|
       if @scerror.save

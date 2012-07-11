@@ -1,0 +1,12 @@
+<div class=span 4>
+
+<% @frameworks = Framework.all %>
+			<select name="frameworkSel">
+				<% @frameworks.each do |f| %>
+				 	<option value=<% f.id %>><%= f.name %></option>
+				<% end %>
+			</select
+			</span>
+</div>
+
+

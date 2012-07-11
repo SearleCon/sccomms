@@ -1,0 +1,37 @@
+<ul class="nav nav-list">
+  <li>
+	<li class="active">
+    <a href="#">
+      <i class="icon-exclamation-sign"></i>
+      Possible Actions
+    </a>
+	</li>
+  </li>
+</ul>
+
+
+
+<div class="tooltip-demo well">
+  <center>
+	  <p class="muted" style="margin-bottom: 0;">
+		<%= link_to "New Command", new_sccommand_path, 
+		                            class: "btn btn-small btn-success" %>
+		<%= link_to "New Framework", new_framework_path, 
+		                            class: "btn btn-small btn-success" %>
+
+		<%= link_to "New Note", new_note_path, 
+		                            class: "btn btn-small btn-success" %>
+
+
+		<%= link_to "All Commands", sccommands_path, 
+		                            class: "btn btn-small btn-primary" %>
+
+		<%= link_to "All Frameworks", frameworks_path, 
+		                            class: "btn btn-small btn-primary" %>
+
+		<%= link_to "All Notes", notes_path, 
+		                            class: "btn btn-small btn-primary" %>
+	  </p>
+  </center>
+</div>
+

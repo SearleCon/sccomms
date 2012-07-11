@@ -1,25 +1,54 @@
 <% provide(:title, 'Home') %>
 
-<center><%= link_to image_tag("sc.png", alt: "Rails"), 'http://searleconsulting.com/' %></center>
+<center><%= link_to image_tag("sc.png", alt: "Searle Consulting"), 'http://searleconsulting.com/' %></center><br>
 
 <% if signed_in? %>
+
+
+  <div class="tooltip-demo well">
+    <p class="muted" style="margin-bottom: 0;">
+		Put all your text into a block like this! It looks good.
+    </p>
+  </div>
+
+
   <div class="row">
-    <aside class="span4">
+    <aside class="span12" text="small">
       <section>
-        <%= render 'shared/user_info' %>
+		<%= render 'shared/quickadd' %>
+      </section>
+	</aside>
+	
+    <aside class="span6">
+      <section>
+        <%= render 'shared/showcommands' %>
       </section>
       <section>
-        <%= render 'shared/stats' %>
-      </section>
-      <section>
-        <%= render 'shared/micropost_form' %>
+        <%= render 'shared/showframeworks' %>
       </section>
     </aside>
-    <div class="span8">
-      <h3>Micropost Feed</h3>
-      <%= render 'shared/feed' %>
-    </div>
+    <aside class="span6">
+      <section>
+        <%= render 'shared/shownotes' %>
+      </section>
+      <section>
+        <%= render 'shared/showerrors' %>
+      </section>
+    </aside>
+
+    <aside class="span12">
+      <section>
+        <%= render 'shared/buttons' %>
+      </section>
+
+    <aside class="span12">
+      <section>
+		<%= render 'sccommands/show_frameworks' %>
+      </section>
   </div>  
+
+
+
 <% else %>
   <div class="center hero-unit">
     <h1>CommTrack</h1>

@@ -2,7 +2,9 @@ class NotesController < ApplicationController
   # GET /notes
   # GET /notes.json
   def index
-    @notes = Note.all
+    # @notes = Note.all
+    @notes = Note.paginate(:per_page => 5, :page => params[:page])      
+
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,11 +43,12 @@ class NotesController < ApplicationController
   # POST /notes.json
   def create
     @note = Note.new(params[:note])
+    @note.user_id = current_user.id
 
     respond_to do |format|
       if @note.save
-        format.html { redirect_to @note, notice: 'Note was successfully created.' }
-        format.json { render json: @note, status: :created, location: @note }
+        format.html { redirect_to root_path, notice: 'Note was successfully created.' }
+        format.json { render json: root_path, status: :created, location: @note }
       else
         format.html { render action: "new" }
         format.json { render json: @note.errors, status: :unprocessable_entity }

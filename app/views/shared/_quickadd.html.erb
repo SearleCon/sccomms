@@ -1,0 +1,23 @@
+<ul class="nav nav-list">
+  <li>
+	<li class="active">
+    <a href="#">
+      <i class="icon-exclamation-sign"></i>
+      Quick Adds!
+    </a>
+	</li>
+  </li>
+</ul>
+
+<div class="tooltip-demo well">
+
+<%= form_for(Sccommand.new) do |f| %>
+  Command: <%= f.text_field :commandstr %><%= f.submit %>	
+<% end %>
+
+<%= form_for(Note.new) do |f| %>
+  Note: <%= f.text_field :description %><br />
+  <%= f.submit %>
+  <%= f.check_box :user_id %>
+<% end %>
+</div>

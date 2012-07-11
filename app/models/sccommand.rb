@@ -1,4 +1,6 @@
 class Sccommand < ActiveRecord::Base
+  belongs_to :framework
+  has_many :notes
   
   def self.search(search)
     if search
@@ -7,5 +9,4 @@ class Sccommand < ActiveRecord::Base
       scoped
     end
   end
-  
 end

@@ -47,11 +47,12 @@ class SccommandsController < ApplicationController
   # POST /sccommands.json
   def create
     @sccommand = Sccommand.new(params[:sccommand])
+    @sccommand.user_id = current_user.id
 
     respond_to do |format|
       if @sccommand.save
-        format.html { redirect_to @sccommand, notice: 'Sccommand was successfully created.' }
-        format.json { render json: @sccommand, status: :created, location: @sccommand }
+        format.html { redirect_to root_path, notice: 'Sccommand was successfully created.' }
+        format.json { render json: root_path, status: :created, location: @sccommand }
       else
         format.html { render action: "new" }
         format.json { render json: @sccommand.errors, status: :unprocessable_entity }

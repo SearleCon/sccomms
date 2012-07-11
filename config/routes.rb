@@ -1,7 +1,9 @@
 SampleApp::Application.routes.draw do
   resources :scerrors
 
-  resources :frameworks
+  resources :frameworks do
+    resources :sccommands
+  end
 
   resources :notes
 

@@ -1,0 +1,24 @@
+<ul class="nav nav-list">
+  <li>
+	<li class="active">
+    <a href="notes">
+      <i class="icon-edit"></i>
+      Recent Notes
+    </a>
+	</li>
+  </li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+    </tr>
+  </thead>
+  <tbody>
+    <% @notes.each do |note| %>
+      <tr>
+        <td><%= link_to note.description, note_path(note) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

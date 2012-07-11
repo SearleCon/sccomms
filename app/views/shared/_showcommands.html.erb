@@ -1,0 +1,25 @@
+<ul class="nav nav-list">
+  <li>
+	<li class="active">
+    <a href="sccommands">
+      <i class="icon-book"></i>
+      Recent Commands
+    </a>
+	</li>
+  </li>
+</ul>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+    </tr>
+  </thead>
+  <tbody>
+    <% @sccommands.each do |sccommand| %>
+      <tr>
+        <td><%= link_to sccommand.commandstr, sccommand_path(sccommand) %></td>
+		<td><span class="timestamp">Updated <%= time_ago_in_words(sccommand.created_at) %> ago.</span></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

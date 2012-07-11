@@ -2,7 +2,9 @@ class FrameworksController < ApplicationController
   # GET /frameworks
   # GET /frameworks.json
   def index
-    @frameworks = Framework.all
+    # @frameworks = Framework.all
+    @frameworks = Framework.paginate(:per_page => 5, :page => params[:page])      
+
 
     respond_to do |format|
       format.html # index.html.erb
@@ -41,7 +43,8 @@ class FrameworksController < ApplicationController
   # POST /frameworks.json
   def create
     @framework = Framework.new(params[:framework])
-
+    @framework.user_id = current_user.id
+    
     respond_to do |format|
       if @framework.save
         format.html { redirect_to @framework, notice: 'Framework was successfully created.' }

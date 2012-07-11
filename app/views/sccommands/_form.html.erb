@@ -10,7 +10,11 @@
     <div class="controls">
       <%= f.text_field :description, :class => 'text_field' %>
     </div>
+
+	<%= render :partial => 'show_frameworks' %>
+
   </div>
+	
 
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
