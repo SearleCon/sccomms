@@ -17,7 +17,8 @@
   <tbody>
     <% @frameworks.each do |framework| %>
       <tr>
-        <td><%= link_to framework.name, framework_path(framework) %></td>
+        <td><%= link_to truncate(framework.name, :length => 25), framework_path(framework) %></td>
+		<td><span class="timestamp">Updated <%= time_ago_in_words(framework.created_at) %> ago.</span></td>
       </tr>
     <% end %>
   </tbody>

@@ -17,7 +17,15 @@
   <tbody>
     <% @notes.each do |note| %>
       <tr>
-        <td><%= link_to note.description, note_path(note) %></td>
+        <td><%= link_to truncate(note.description, :length => 20), note_path(note) %></td>
+        <td><center>		
+			  <% if note.privatebool %>
+				 	<span class="label label-success">Private</span>
+				<% end %>
+			</center> 						
+		</td>
+			
+		<td><span class="timestamp">Updated <%= time_ago_in_words(note.created_at) %> ago.</span></td>
       </tr>
     <% end %>
   </tbody>

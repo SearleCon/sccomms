@@ -17,6 +17,7 @@
 
 <%= form_for(Note.new) do |f| %>
   Note: <%= f.text_field :description %><br />
+  Private?:<%= f.check_box :privatebool %>
   <%= f.submit %>
 <% end %>
 </div>

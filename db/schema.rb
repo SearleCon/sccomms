@@ -11,11 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(:version => 20120711062810) do
-=======
-ActiveRecord::Schema.define(:version => 20120710073559) do
->>>>>>> 759c2ee30999485a0966dc508b5f44d6fdb87a54
+ActiveRecord::Schema.define(:version => 20120712055811) do
 
   create_table "frameworks", :force => true do |t|
     t.string   "name"
@@ -25,10 +21,7 @@ ActiveRecord::Schema.define(:version => 20120710073559) do
     t.datetime "updated_at",   :null => false
     t.integer  "sccommand_id"
     t.integer  "note_id"
-<<<<<<< HEAD
     t.integer  "user_id"
-=======
->>>>>>> 759c2ee30999485a0966dc508b5f44d6fdb87a54
   end
 
   create_table "microposts", :force => true do |t|
@@ -45,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20120710073559) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
     t.integer  "user_id"
+    t.boolean  "privatebool"
   end
 
   create_table "relationships", :force => true do |t|
@@ -65,10 +59,7 @@ ActiveRecord::Schema.define(:version => 20120710073559) do
     t.datetime "updated_at",   :null => false
     t.integer  "framework_id"
     t.integer  "note_id"
-<<<<<<< HEAD
     t.integer  "user_id"
-=======
->>>>>>> 759c2ee30999485a0966dc508b5f44d6fdb87a54
   end
 
   create_table "scerrors", :force => true do |t|
@@ -79,10 +70,7 @@ ActiveRecord::Schema.define(:version => 20120710073559) do
     t.integer  "note_id"
     t.integer  "framework_id"
     t.integer  "sccommand_id"
-<<<<<<< HEAD
     t.integer  "user_id"
-=======
->>>>>>> 759c2ee30999485a0966dc508b5f44d6fdb87a54
   end
 
   create_table "users", :force => true do |t|

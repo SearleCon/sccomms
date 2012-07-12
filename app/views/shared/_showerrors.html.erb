@@ -17,7 +17,10 @@
   <tbody>
     <% @scerrors.each do |scerror| %>
       <tr>
-        <td><%= link_to scerror.actualerror, scerror_path(scerror) %></td>
+	
+
+        <td><%= link_to truncate(scerror.actualerror, :length => 30), scerror_path(scerror) %></td>
+		<td><span class="timestamp">Updated <%= time_ago_in_words(scerror.created_at) %> ago.</span></td>
       </tr>
     <% end %>
   </tbody>
