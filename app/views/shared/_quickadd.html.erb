@@ -11,13 +11,24 @@
 
 <div class="tooltip-demo well">
 
-<%= form_for(Sccommand.new) do |f| %>
-  Command: <%= f.text_field :commandstr %><%= f.submit %>	
-<% end %>
+	<button class="label label-success" data-toggle="collapse" data-target="#demo">
+	  Toggle on / off
+	</button><br><br>
 
-<%= form_for(Note.new) do |f| %>
-  Note: <%= f.text_field :description %><br />
-  Private?:<%= f.check_box :privatebool %>
-  <%= f.submit %>
-<% end %>
+
+	<div id="demo" class="collapse in">
+
+
+		<%= form_for(Sccommand.new) do |f| %>
+		  Command: <%= f.text_field :commandstr %><%= f.submit %>	
+		<% end %>
+		
+		<%= form_for(Note.new) do |f| %>
+		  Note: <%= f.text_field :description %><br />
+		  Private?:<%= f.check_box :privatebool %>
+		  <%= f.submit %>
+		<% end %>
+
+	</div>
+
 </div>
