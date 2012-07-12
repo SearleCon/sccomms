@@ -19,4 +19,9 @@ $(document).ready(function() {
 //  $("a").tooltip(); // this will trigger a tooltip on all <a> elements
   $("[rel=tooltip]").tooltip(); // this will trigger a tooltip on all that have rel="tooltip" elements
   $("[rel=popover]").popover('hide') // this will trigger a POPOVER on all that have rel="popover" elements
+  
+  $('.nav-tabs').button()
+  $(".collapse").collapse()
+  $('#myModal').modal()
+
 });

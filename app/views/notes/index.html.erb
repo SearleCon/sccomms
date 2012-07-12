@@ -42,15 +42,43 @@
 <a href="#exampled" rel="tooltip" title="first tooltip">you probably</a> |
 <a href="#element" class="btn btn-danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">hover for popover</a>
 
+<br><br><!-- Add data-toggle="button" to activate toggling on a single button -->
+<button class="btn" data-toggle="button">Single Toggle</button><br>
+ 
+<!-- Add data-toggle="buttons-radio" for radio style toggling on btn-group -->
+<div class="btn-group" data-toggle="buttons-radio">
+  <button class="btn">Left</button>
+  <button class="btn">Middle</button>
+  <button class="btn">Right</button>
+</div>
 
-		 <!-- <p>Hover over the links below to see tooltips:</p>
-		          <div class="tooltip-demo well">
-		            <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh  haven't heard of them. 
-		            </p>
+<button class="btn btn-danger" data-toggle="collapse" data-target="#demo">
+  simple collapsible
+</button>
+ 
+<div id="demo" class="collapse in"> … </div>
 
-					<div class="span9 columns">
-					          <h2>Example hover popover</h2>
-					          <p>Hover over the button to trigger the popover.</p>
-					          <div class="well">
-					            <a href="#element" class="btn btn-danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">hover for popover</a>
-					          </div> -->
+<a class="btn" data-toggle="modal" href="#myModal" >Launch Modal</a>
+
+<div class="modal hide" id="myModal">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal">×</button>
+    <h3>Modal header</h3>
+  </div>
+  <div class="modal-body">
+	
+
+
+		<%= form_for(Sccommand.new) do |f| %>
+		  Command: <%= f.text_field :commandstr %><%= f.submit %>	
+		<% end %>
+
+
+
+
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Close</a>
+    <a href="#" class="btn btn-primary">Save changes</a>
+  </div>
+</div>
