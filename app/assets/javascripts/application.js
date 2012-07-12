@@ -16,4 +16,6 @@
 //= require_tree .
 $(document).ready(function() {
   $('#myCarousel').carousel({ interval: 2000 })
+  $('#element').popover('show')
+  $('#exampled').tooltip('show')
 });
