@@ -31,15 +31,21 @@
   </tbody>
 </table>
 
+
 <%= link_to t('.new', :default => t("helpers.links.new")),
             new_note_path,
             :class => 'btn btn-primary' %>
 
 
+<span rel="tooltip" title="tooltip text">A tooltip text</span> |
+<span rel="popover" title="popup text">A popup text</span> |
+<a href="#exampled" rel="tooltip" title="first tooltip">you probably</a> |
+<a href="#element" class="btn btn-danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">hover for popover</a>
 
-		 <p>Hover over the links below to see tooltips:</p>
+
+		 <!-- <p>Hover over the links below to see tooltips:</p>
 		          <div class="tooltip-demo well">
-		            <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh <a href="#exampled" rel="exampled" title="first tooltip">you probably</a> haven't heard of them. 
+		            <p class="muted" style="margin-bottom: 0;">Tight pants next level keffiyeh  haven't heard of them. 
 		            </p>
 
 					<div class="span9 columns">
@@ -47,4 +53,4 @@
 					          <p>Hover over the button to trigger the popover.</p>
 					          <div class="well">
 					            <a href="#element" class="btn btn-danger" rel="popover" title="A Title" data-content="And here's some amazing content. It's very engaging. right?">hover for popover</a>
-					          </div>
+					          </div> -->
