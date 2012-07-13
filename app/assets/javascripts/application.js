@@ -22,6 +22,5 @@ $(document).ready(function() {
   
   $('.nav-tabs').button()
   $(".collapse").collapse()
-  $('#myModal').modal()
-
+  $('.typeahead').typeahead()
 });
