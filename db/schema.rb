@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120712055811) do
+ActiveRecord::Schema.define(:version => 20120718130550) do
 
   create_table "frameworks", :force => true do |t|
     t.string   "name"
@@ -71,6 +71,7 @@ ActiveRecord::Schema.define(:version => 20120712055811) do
     t.integer  "framework_id"
     t.integer  "sccommand_id"
     t.integer  "user_id"
+    t.string   "image"
   end
 
   create_table "users", :force => true do |t|

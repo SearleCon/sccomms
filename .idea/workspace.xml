@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="fccd5a01-fdff-4149-a32a-20cc887aecc7" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/development.sqlite3" afterPath="$PROJECT_DIR$/db/development.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/scerrors/index.html.erb" afterPath="$PROJECT_DIR$/app/views/scerrors/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/contact.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/contact.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/scerror.rb" afterPath="$PROJECT_DIR$/app/models/scerror.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/scerrors/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/scerrors/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/scerrors/new.html.erb" afterPath="$PROJECT_DIR$/app/views/scerrors/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/scerrors/show.html.erb" afterPath="$PROJECT_DIR$/app/views/scerrors/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
     </list>
     <ignored path="sccomms.iws" />
@@ -27,7 +33,7 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/frameworks/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="41" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+            <state line="6" column="41" selection-start="294" selection-end="294" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -42,30 +48,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="scerror.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/scerror.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/notes/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="21.5">
+            <state line="2" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/scerrors/index.html.erb">
+      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/scerrors/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="42" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.6289308">
+            <state line="15" column="86" selection-start="525" selection-end="525" vertical-scroll-proportion="0.23584905">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scerrors_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/scerrors_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="55" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/scerrors/_form.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="69" selection-start="451" selection-end="451" vertical-scroll-proportion="-8.125">
               <folding />
             </state>
           </provider>
@@ -90,6 +103,11 @@
         <option value="$PROJECT_DIR$/app/views/frameworks/new.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/scerrors/index.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/scerrors/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/scerrors/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/scerror.rb" />
+        <option value="$PROJECT_DIR$/app/views/scerrors/show.html.erb" />
       </list>
     </option>
   </component>
@@ -193,6 +211,60 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="uploaders" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sccomms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sccomms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sccomms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sccomms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sccomms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sccomms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -610,36 +682,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/frameworks/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/framework.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="39" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="3" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/frameworks/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/framework.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="39" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0">
@@ -655,11 +697,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/frameworks/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="47" selection-start="526" selection-end="526" vertical-scroll-proportion="-8.125" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/scerrors_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="34" selection-start="394" selection-end="394" vertical-scroll-proportion="0.3709428" />
       </provider>
     </entry>
     <entry file="uml://RailsDependency/#sccomms">
@@ -690,8 +727,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/frameworks/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="294" selection-end="294" vertical-scroll-proportion="0.0">
+        <state line="6" column="41" selection-start="294" selection-end="294" vertical-scroll-proportion="-0.625">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/uploaders/image_uploader.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="107" selection-start="129" selection-end="129" vertical-scroll-proportion="0.07668712">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/scerrors/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="62" selection-start="1406" selection-end="1406" vertical-scroll-proportion="0.5974843">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/notes/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.5408805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="0" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.38343558">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -702,25 +776,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/app/views/scerrors/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="1113" selection-end="1113" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/notes/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="21.5">
+        <state line="9" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.14150943">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/scerrors/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/scerrors/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="42" selection-start="1479" selection-end="1479" vertical-scroll-proportion="0.6289308">
+        <state line="13" column="69" selection-start="451" selection-end="451" vertical-scroll-proportion="-8.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/scerrors_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="55" selection-start="48" selection-end="48" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/scerror.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/scerrors/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="86" selection-start="525" selection-end="525" vertical-scroll-proportion="0.23584905">
           <folding />
         </state>
       </provider>

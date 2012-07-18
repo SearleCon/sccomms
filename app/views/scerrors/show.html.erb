@@ -10,6 +10,9 @@
   <dd><%= @scerror.fixnote %></dd>
 </dl>
 
+<%= image_tag @scerror.image_url.to_s %>
+<div class="name"><%= @scerror.image %></div>
+
 <div class="form-actions">
   <%= link_to t('.back', :default => t("helpers.links.back")),
               scerrors_path, :class => 'btn'  %>
